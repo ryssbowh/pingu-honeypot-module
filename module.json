@@ -1,0 +1,16 @@
+{
+    "name": "HoneyPot",
+    "alias": "honeypot",
+    "description": "",
+    "keywords": [],
+    "active": 0,
+    "order": 10,
+    "providers": [
+        "Pingu\\HoneyPot\\Providers\\HoneyPotServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "functions.php"
+    ],
+    "requires": []
+}
