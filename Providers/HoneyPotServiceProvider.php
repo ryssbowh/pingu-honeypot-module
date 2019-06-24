@@ -4,6 +4,7 @@ namespace Pingu\HoneyPot\Providers;
 
 use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Database\Eloquent\Factory;
+use Pingu\Core\Support\ModuleServiceProvider;
 use Pingu\HoneyPot\Http\Middleware\PreventsSpam;
 
 class HoneyPotServiceProvider extends ModuleServiceProvider
