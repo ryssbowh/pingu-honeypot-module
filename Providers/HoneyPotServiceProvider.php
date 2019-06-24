@@ -25,7 +25,7 @@ class HoneyPotServiceProvider extends ModuleServiceProvider
     {
         $this->registerConfig();
         if(!$this->app->runningInConsole() and !\Auth::user()){
-            \Asset::container('modules')->add('honeypot-js', 'module-assets/HoneyPot/js/HoneyPot.js');
+            \Asset::container('modules')->add('honeypot-js', 'module-assets/HoneyPot.js');
             $kernel->pushMiddleware(PreventsSpam::class);
         }
     }

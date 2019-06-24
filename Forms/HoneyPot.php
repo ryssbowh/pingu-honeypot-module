@@ -10,4 +10,12 @@ class HoneyPot extends Field{
 		echo \FormFacade::text($this->name, null, ['id' => 'my-very-nice-email']);
 	}
 
+	/**
+	 * @inheritDoc
+	 */
+	public function getDefaultView()
+	{
+		return 'forms::fields.'.$this->getType();
+	}
+
 }
