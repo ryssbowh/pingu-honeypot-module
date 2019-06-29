@@ -1,3 +1,3 @@
 $(() => {
-	$("form #my-very-nice-email").css("display", "none");
-}) 
+	$("form #my-very-nice-email").css("display", "none"); 
+});
