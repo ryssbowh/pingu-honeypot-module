@@ -3,7 +3,6 @@
     "alias": "honeypot",
     "description": "Protects public forms with honeypots",
     "keywords": [],
-    "active": 0,
     "order": 10,
     "providers": [
         "Pingu\\HoneyPot\\Providers\\HoneyPotServiceProvider"
