@@ -34,6 +34,6 @@ class FormListener
         $field = Field::buildFieldClass(config('honeypot.fieldName'), [
             'field' => HoneyPot::class
         ]);
-        $event->form->addField(config('honeypot.fieldName'), $field);
+        $event->form->addField($field);
     }
 }
