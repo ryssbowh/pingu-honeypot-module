@@ -23,17 +23,19 @@ class FormListener
     /**
      * Handle the event.
      *
-     * @param  object  $event
+     * @param  object $event
      * @return void
      */
     public function handle($event)
     {
-        if(!config('honeypot.enabled')){
+        if(!config('honeypot.enabled')) {
             return;
         }
-        $field = Field::buildFieldClass(config('honeypot.fieldName'), [
+        $field = Field::buildFieldClass(
+            config('honeypot.fieldName'), [
             'field' => HoneyPot::class
-        ]);
+            ]
+        );
         $event->form->addField($field);
     }
 }

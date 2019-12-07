@@ -9,6 +9,6 @@ use Pingu\HoneyPot\Listeners\FormListener;
 class EventServiceProvider extends ServiceProvider
 {
     protected $listen = [
-    	FormBuilt::class => [FormListener::class]
+        FormBuilt::class => [FormListener::class]
     ];
 }
