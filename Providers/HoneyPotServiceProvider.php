@@ -52,5 +52,8 @@ class HoneyPotServiceProvider extends ModuleServiceProvider
         $this->mergeConfigFrom(
             __DIR__.'/../Config/config.php', 'honeypot'
         );
+        $this->publishes([
+            __DIR__.'/../Config/config.php' => config_path('module-honeypot.php')
+        ], 'config');
     }
 }
