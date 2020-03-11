@@ -53,7 +53,7 @@ class HoneyPotServiceProvider extends ModuleServiceProvider
             __DIR__.'/../Config/config.php', 'honeypot'
         );
         $this->publishes([
-            __DIR__.'/../Config/config.php' => config_path('module-honeypot.php')
-        ], 'config');
+            __DIR__.'/../Config/config.php' => config_path('honeypot.php')
+        ], 'honeypot-config');
     }
 }
